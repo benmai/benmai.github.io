@@ -130,6 +130,29 @@ body {
   color: rgba(255,255,255,.5);
 }
 
+/*
+ * Spotify button
+ */
+.btn-flickr {
+  color:#fff;
+  background-color: #ff0084;
+  border-color: rgba(0,0,0,0.2)}
+.btn-flickr:hover,
+.btn-flickr:focus,
+.btn-flickr:active,
+.btn-flickr.active,
+.open>.dropdown-toggle.btn-flickr {
+  color:#fff;
+  background-color:#cc006a;
+  border-color:rgba(0,0,0,0.2)
+}
+.btn-flickr:active,
+.btn-flickr.active,
+.open>.dropdown-toggle.btn-flickr {
+  background-image:none}
+.btn-flickr.disabled,.btn-flickr[disabled],fieldset[disabled] .btn-flickr,.btn-flickr.disabled:hover,.btn-flickr[disabled]:hover,fieldset[disabled] .btn-flickr:hover,.btn-flickr.disabled:focus,.btn-flickr[disabled]:focus,fieldset[disabled] .btn-flickr:focus,.btn-flickr.disabled:active,.btn-flickr[disabled]:active,fieldset[disabled] .btn-flickr:active,.btn-flickr.disabled.active,.btn-flickr[disabled].active,fieldset[disabled] .btn-flickr.active{background-color:#ff0084;border-color:rgba(0,0,0,0.2)}
+.btn-flickr .badge{color:#ff0084;background-color:#fff}
+
 
 /*
  * Affix and center
