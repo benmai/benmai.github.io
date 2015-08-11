@@ -45,6 +45,10 @@ body {
   background-image: url(images/LondonMarket.jpg);
 }
 
+.bg-pointing {
+  background-image: url(images/MichaelPointing.jpg);
+}
+
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
   display: table;
@@ -137,6 +141,16 @@ body {
   color: rgba(255,255,255,.5);
 }
 
+
+/*
+ * About Us modals
+ */
+
+.history .modal-body, .history .modal-header {
+  color: black;
+  text-shadow: none;
+}
+
 /*
  * Spotify button
  */
@@ -197,6 +211,6 @@ fieldset[disabled] .btn-spotify:hover,
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 700px;
+    width: 900px;
   }
 }
