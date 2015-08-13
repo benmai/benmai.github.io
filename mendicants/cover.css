@@ -30,11 +30,13 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-color: #C04453;
 }
 body {
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  height: 100%;
 }
 
 .bg-jump {
@@ -131,7 +133,6 @@ body {
   font-weight: bold;
 }
 
-
 /*
  * Footer
  */
@@ -149,6 +150,10 @@ body {
 .history .modal-body, .history .modal-header {
   color: black;
   text-shadow: none;
+}
+
+.part {
+  color: lightgrey;
 }
 
 /*
@@ -204,6 +209,18 @@ fieldset[disabled] .btn-spotify:hover,
   .mastfoot,
   .cover-container {
     width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+
+  .cover-container.team {
+    height: 100%;
+    overflow: scroll;
+    padding-top: 65px;
+    padding-bottom: 94px;
+  }
+
+  .team .row {
+    height:100%;
+    /*overflow:scroll;*/
   }
 }
 
