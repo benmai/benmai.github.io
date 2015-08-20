@@ -71,7 +71,7 @@
         <!-- /.container-fluid -->
     </nav>
 
-    <img src="img/header.jpg" id="dummy" style="display:none"></img>
+    <!-- <img src="img/header.jpg" id="dummy" style="display:none"></img> -->
     <header>
         <div class="header-content">
             <div class="header-content-inner">
@@ -526,9 +526,19 @@
     <script src="js/creative.js"></script>
 
     <script>
-        $('#dummy').ready(function () {
-            $('header').css('background-image', 'url(img/header.jpg)');
-            $('header').css('visibility', 'visible').hide().fadeIn(1200);
+        // $('header').waitForImages({
+        //     finished: function () {
+        //         $(this).css('visibility', 'visible').hide().fadeIn(1000);
+        //     },
+        //     waitForAll: true
+        // });
+        // $('#dummy').ready(function () {
+        //     $('header').css('background-image', 'url(img/header.jpg)');
+        //     $('header').css('visibility', 'visible').hide().fadeIn(1200);
+        // });
+
+        $(window).load(function () {
+            $('body').css('visibility', 'visible').hide().fadeIn(1000);
         });
 
         function handleData (data) {
