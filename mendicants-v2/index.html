@@ -71,6 +71,7 @@
         <!-- /.container-fluid -->
     </nav>
 
+    <img src="img/header.jpg" id="dummy" style="display:none"></img>
     <header>
         <div class="header-content">
             <div class="header-content-inner">
@@ -525,6 +526,11 @@
     <script src="js/creative.js"></script>
 
     <script>
+        $('#dummy').ready(function () {
+            $('header').css('background-image', 'url(img/header.jpg)');
+            $('header').css('visibility', 'visible').hide().fadeIn(1200);
+        });
+
         function handleData (data) {
             debugger;
             if (data.error) {
@@ -535,6 +541,7 @@
                 console.log('unknown return');
             }
         }
+
         $('.form-horizontal').submit(function (event) {
             event.preventDefault();
             // var contactData = $(event.target).serializeArray().reduce(function (data, current) {
