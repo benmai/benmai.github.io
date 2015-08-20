@@ -265,6 +265,14 @@ header .header-content .header-content-inner p {
 .events {
   padding-bottom: 20px;
 }
+form {
+  padding: 0px 10px;
+}
+@media (min-width: 768px) {
+  form {
+    padding: 0px;
+  }
+}
 .text-primary {
   color: #c04453;
 }
