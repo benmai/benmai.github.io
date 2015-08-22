@@ -25,6 +25,13 @@ a:hover,
 a:focus {
   color: #9c3541;
 }
+a.auditions {
+  color: #cccccc;
+}
+a.auditions:hover,
+a.auditions:focus {
+  color: white;
+}
 h1,
 h2,
 h3,
