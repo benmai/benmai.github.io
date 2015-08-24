@@ -93,25 +93,29 @@
                     <h2>Check Out Our Music, Videos, and More</h2>
                     <hr>
                     <a class="btn btn-social-icon" href="https://twitter.com/the_mendicants">
-                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-twitter" data-original-title="Twitter" data-placement="bottom" data-toggle="tooltip"></i>
                     </a>
                     <a class="btn btn-social-icon" href="https://www.facebook.com/pages/Stanford-Mendicants/16196500550">
-                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-facebook" data-original-title="Facebook" data-placement="bottom" data-toggle="tooltip"></i>
                     </a>
-                    <a class="btn btn-social-icon" href="mailto:mendicants.business@gmail.com">
-                        <i class="fa fa-envelope-o"></i>
-                    </a>
+<!--                     <a class="btn btn-social-icon" href="mailto:mendicants.business@gmail.com">
+                        <i class="fa fa-envelope-o" data-original-title="Email us" data-placement="bottom" data-toggle="tooltip"></i>
+                    </a> -->
                     <a class="btn btn-social-icon" href="https://open.spotify.com/artist/3ZBvLOZu5A9jtKO5XjHDTl">
-                        <i class="fa fa-spotify"></i>
+                        <i class="fa fa-spotify" data-original-title="Spotify" data-placement="bottom" data-toggle="tooltip"></i>
                     </a>
                     <a class="btn btn-social-icon" href="https://www.youtube.com/user/StanfordMendicants">
-                        <i class="fa fa-youtube"></i>
+                        <i class="fa fa-youtube" data-original-title="YouTube" data-placement="bottom" data-toggle="tooltip"></i>
                     </a>
                     <a class="btn btn-social-icon" href="https://itunes.apple.com/us/artist/the-stanford-mendicants/id845314849">
-                        <i class="fa fa-apple"></i>
+                        <i class="fa fa-apple" data-original-title="iTunes" data-placement="bottom" data-toggle="tooltip"></i>
                     </a>
                     <a class="btn btn-social-icon" href="https://squareup.com/market/the-stanford-mendicants">
-                        <i class="fa fa-shopping-cart"></i>
+                        <i class="fa fa-shopping-cart" data-original-title="Merchandise Store" data-placement="bottom" data-toggle="tooltip"></i>
+                    </a>
+                    
+                    <a class="btn btn-social-icon" href="https://mailman.stanford.edu/mailman/listinfo/mendicant-fans">
+                        <i class="fa fa-envelope" data-original-title="Join Mailing List" data-placement="bottom" data-toggle="tooltip"></i>
                     </a>
                 </div>
             </div>
@@ -573,6 +577,10 @@
                 console.log('unknown return');
             }
         }
+
+        $(function () {
+          $('[data-toggle="tooltip"]').tooltip()
+        });
 
         $('.form-horizontal').submit(function (event) {
             event.preventDefault();
