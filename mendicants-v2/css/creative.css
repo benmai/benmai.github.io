@@ -32,6 +32,10 @@ a.auditions:hover,
 a.auditions:focus {
   color: white;
 }
+#auditions {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 h1,
 h2,
 h3,
